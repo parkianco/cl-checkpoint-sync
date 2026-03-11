@@ -7,7 +7,7 @@
   :name "CL-CHECKPOINT-SYNC"
   :description "Checkpoint-based fast sync for blockchain state synchronization"
   :version "0.1.0"
-  :author "CLPIC Contributors"
+  :author "Parkian Company LLC"
   :license "BSD-3-Clause"
   :homepage "https://github.com/clpic/cl-checkpoint-sync"
   :bug-tracker "https://github.com/clpic/cl-checkpoint-sync/issues"

@@ -1,3 +1,6 @@
+;;;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+;;;; SPDX-License-Identifier: BSD-3-Clause
+
 ;;;; CL-CHECKPOINT-SYNC - Weak Subjectivity Module
 ;;;;
 ;;;; Weak subjectivity period calculation and validation for PoS chains.
