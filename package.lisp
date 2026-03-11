@@ -34,9 +34,9 @@
    #:checkpoint-state
    #:checkpoint-state-p
    #:make-checkpoint-state
-   #:checkpoint-state-root
-   #:checkpoint-state-validators-root
-   #:checkpoint-state-balances-root
+   #:cps-root
+   #:cps-validators-root
+   #:cps-balances-root
 
    ;; Checkpoint proof
    #:checkpoint-proof

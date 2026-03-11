@@ -132,7 +132,8 @@
 (defstruct (checkpoint-state
             (:constructor %make-checkpoint-state)
             (:copier nil)
-            (:predicate checkpoint-state-p))
+            (:predicate checkpoint-state-p)
+            (:conc-name cps-))
   "Checkpoint state summary.
 
    Slots:
@@ -152,6 +153,7 @@
    :root (or root (make-array 32 :element-type '(unsigned-byte 8) :initial-element 0))
    :validators-root (or validators-root (make-array 32 :element-type '(unsigned-byte 8) :initial-element 0))
    :balances-root (or balances-root (make-array 32 :element-type '(unsigned-byte 8) :initial-element 0))))
+
 
 ;;;; ============================================================================
 ;;;; CHECKPOINT PROOF

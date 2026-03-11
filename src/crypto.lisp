@@ -9,7 +9,8 @@
 ;;;; SHA256 IMPLEMENTATION
 ;;;; ============================================================================
 
-(defconstant +sha256-k+
+;; Use defvar to avoid SBCL DEFCONSTANT-UNEQL on array constants
+(defvar +sha256-k+
   #(#x428a2f98 #x71374491 #xb5c0fbcf #xe9b5dba5
     #x3956c25b #x59f111f1 #x923f82a4 #xab1c5ed5
     #xd807aa98 #x12835b01 #x243185be #x550c7dc3
@@ -28,7 +29,7 @@
     #x90befffa #xa4506ceb #xbef9a3f7 #xc67178f2)
   "SHA256 round constants.")
 
-(defconstant +sha256-h0+
+(defvar +sha256-h0+
   #(#x6a09e667 #xbb67ae85 #x3c6ef372 #xa54ff53a
     #x510e527f #x9b05688c #x1f83d9ab #x5be0cd19)
   "SHA256 initial hash values.")
@@ -108,8 +109,14 @@
                                      (aref +sha256-k+ i) (aref w i))))
                       (t2 (logand #xFFFFFFFF
                                   (+ (sha256-sigma0 a) (sha256-maj a b c)))))
-                 (setf hh g g f f e (logand #xFFFFFFFF (+ d t1))
-                       d c c b b a a (logand #xFFFFFFFF (+ t1 t2)))))
+                 (setf hh g
+                       g f
+                       f e
+                       e (logand #xFFFFFFFF (+ d t1))
+                       d c
+                       c b
+                       b a
+                       a (logand #xFFFFFFFF (+ t1 t2)))))
       ;; Add to hash
       (setf (aref h 0) (logand #xFFFFFFFF (+ (aref h 0) a))
             (aref h 1) (logand #xFFFFFFFF (+ (aref h 1) b))
