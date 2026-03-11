@@ -1,0 +1,13 @@
+CL-CHECKPOINT-SYNC
+==================
+
+Checkpoint-based fast sync for blockchain clients.
+
+This library was extracted from the CLPIC project (Common Lisp P2P Intellectual
+Property Chain). It provides snapshot-based fast synchronization with state
+checkpoint download and verification.
+
+Original Authors: CLPIC Contributors
+License: BSD-3-Clause
+
+For the original project, see: https://github.com/clpic/clpic
