@@ -9,9 +9,9 @@
   :version "0.1.0"
   :author "Parkian Company LLC"
   :license "BSD-3-Clause"
-  :homepage "https://github.com/clpic/cl-checkpoint-sync"
-  :bug-tracker "https://github.com/clpic/cl-checkpoint-sync/issues"
-  :source-control (:git "https://github.com/clpic/cl-checkpoint-sync.git")
+  :homepage "https://github.com/parkianco/cl-checkpoint-sync"
+  :bug-tracker "https://github.com/parkianco/cl-checkpoint-sync/issues"
+  :source-control (:git "https://github.com/parkianco/cl-checkpoint-sync.git")
 
   :depends-on ()  ; Pure CL - no external dependencies
 
