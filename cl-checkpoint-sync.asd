@@ -51,4 +51,6 @@
      (:file "test-download")
      (:file "test-finality"))))
   :perform (asdf:test-op (o c)
-             (uiop:symbol-call :cl-checkpoint-sync/test :run-tests)))
+             (let ((result (uiop:symbol-call :cl-checkpoint-sync/test :run-tests)))
+               (unless result
+                 (error "Tests failed")))))
