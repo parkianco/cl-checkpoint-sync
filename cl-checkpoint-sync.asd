@@ -1,3 +1,6 @@
+;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+;; SPDX-License-Identifier: BSD-3-Clause
+
 ;;;; CL-CHECKPOINT-SYNC - ASDF System Definition
 ;;;;
 ;;;; Checkpoint-based fast sync for blockchain clients.
@@ -45,7 +48,7 @@
     :serial t
     :components
     ((:file "package")
-     (:file "test-util")
+     (:file "test-download")
      (:file "test-types")
      (:file "test-verification")
      (:file "test-download")
