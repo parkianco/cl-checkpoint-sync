@@ -8,5 +8,5 @@ Property Chain). It provides snapshot-based fast synchronization with state
 checkpoint download and verification.
 
 Original Authors: CLPIC Contributors
-License: BSD-3-Clause
+License: Apache-2.0
 

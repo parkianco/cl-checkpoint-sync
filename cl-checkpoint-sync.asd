@@ -11,7 +11,7 @@
   :description "Checkpoint-based fast sync for blockchain state synchronization"
   :version "0.1.0"
   :author "Parkian Company LLC"
-  :license "BSD-3-Clause"
+  :license "Apache-2.0"
   :homepage "https://github.com/parkianco/cl-checkpoint-sync"
   :bug-tracker "https://github.com/parkianco/cl-checkpoint-sync/issues"
   :source-control (:git "https://github.com/parkianco/cl-checkpoint-sync.git")
